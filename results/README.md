@@ -10,6 +10,17 @@ in `games` but excluded from the win-rate denominator. (Table 2 has no undecided
 | `final_result.csv` | `metric`, `value` — Simulation-track rank, number of teams, final score, games, wins, losses, win rate, and the Kaggle submission reference |
 | `results_by_matchup.csv` | `opponent_deck`, `games`, `wins`, `losses`, `win_rate_pct` — Table 2 of the write-up, final evaluation period |
 
+## `feature_occlusion/` — Figure 3
+
+In each position with substantively different options, one group of features is removed at a time and
+the policy is asked again; the **flip rate** is the percentage of positions in which its chosen move changes.
+
+| File | Columns |
+|---|---|
+| `summary.csv` | `metric`, `value` — local games played, and the number of positions behind Figure 3 |
+| `flip_rate_by_feature_group.csv` | `feature_group` (as labelled in Figure 3), `flip_rate_pct`, `basis` (all positions, or the positions in which that feature was available) |
+| `crustle_shift.csv` | how the flip rate of two feature groups changes against Crustle: `feature_group`, `flip_rate_all_opponents_pct` (across all opponents), `flip_rate_vs_crustle_pct` (against the Crustle deck list named in `crustle_opponent`), `crustle_opponent`, `crustle_positions` |
+
 ## `lethal_aware_rl/` — Figure 4
 
 The same initial policy trained for 300 iterations with the rule-based lethal detector

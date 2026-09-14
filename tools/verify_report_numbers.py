@@ -15,6 +15,8 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 failures = 0
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")  # print "?" for characters the console cannot encode
 
 
 def rows(rel):
@@ -69,6 +71,19 @@ check("Game dimensions", models[0]["game_dim"], 45, 0)
 check("Option dimensions", models[0]["option_dim"], 54, 0)
 st = json.load(open(os.path.join(ROOT, "configs/switch_table.json"), encoding="utf-8"))
 check("Specialist slots (1 generalist + 7 specialists)", st["specialist_slot_count"], 7, 0)
+
+# Section 4: feature design (Figure 3)
+fo = {r["metric"]: r["value"] for r in rows("results/feature_occlusion/summary.csv")}
+check("Local games for the flip-rate analysis", fo["local_games"], 587, 0)
+check("Positions with substantively different options", fo["positions"], 24013, 0)
+fg = rows("results/feature_occlusion/flip_rate_by_feature_group.csv")
+for r, expected in zip(fg, [50.3, 36.5, 31.7, 28.9, 28.6, 15.0, 7.8]):
+    check(f"Figure 3 {r['feature_group']} (%)", r["flip_rate_pct"], expected, 0)
+cs = rows("results/feature_occlusion/crustle_shift.csv")
+check("Defense flag flip rate, all opponents (%)", cs[0]["flip_rate_all_opponents_pct"], 2.3, 0)
+check("Defense flag flip rate, against Crustle (%)", cs[0]["flip_rate_vs_crustle_pct"], 9.3, 0)
+check("Opponent's Active Spot flip rate, all opponents (%)", round(float(cs[1]["flip_rate_all_opponents_pct"])), 22, 0)
+check("Opponent's Active Spot flip rate, against Crustle (%)", round(float(cs[1]["flip_rate_vs_crustle_pct"])), 32, 0)
 
 # Section 4: RL with the lethal detector (Figure 4)
 cp = rows("results/lethal_aware_rl/win_rate_by_checkpoint.csv")

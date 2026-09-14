@@ -1,0 +1,8 @@
+feature_group,flip_rate_pct,basis
+Own Pokémon in play,50.3,all positions
+Inventory rows (remaining deck),36.5,all positions
+Own hand,31.7,all positions
+Opponent's Pokémon in play,28.9,all positions
+Attached Energy,28.6,all positions
+Guaranteed-win flag,15.0,all positions
+Opponent's known hand (when available),7.8,positions in which the opponent's known hand was available

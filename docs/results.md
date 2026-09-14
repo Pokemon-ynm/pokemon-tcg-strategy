@@ -23,6 +23,35 @@ placing **26th of 6,807 teams** in the Simulation track with a final score of **
 Among the main matchups, the only one with a losing record was Dragapult ex; we had a winning record in
 all the others.
 
+## Feature design
+
+![Figure 3. Focused featured designs](../figures/figure3-feature-occlusion.png)
+
+We played **587 local games** and collected **24,013 positions** in which the options were substantively
+different ([`results/feature_occlusion/summary.csv`](../results/feature_occlusion/summary.csv)). In each
+position we removed one group of features at a time and measured the fraction of positions in which the
+move chosen by the policy changed (the **flip rate**,
+[`flip_rate_by_feature_group.csv`](../results/feature_occlusion/flip_rate_by_feature_group.csv)).
+
+| Feature group | Flip rate |
+|---|--:|
+| Own Pokémon in play | 50.3% |
+| Inventory rows (remaining deck) | 36.5% |
+| Own hand | 31.7% |
+| Opponent's Pokémon in play | 28.9% |
+| Attached Energy | 28.6% |
+| Guaranteed-win flag | 15.0% |
+| Opponent's known hand (when available) | 7.8% |
+
+The policy chose its moves mainly by looking at our own resources (board, deck, hand). Hand-crafted
+features that are not obtained directly from observation, such as the deck inventory, also ranked
+highly, indicating that these features influence the policy's action choices.
+
+The features the agent looks at also change with the opponent. Against Crustle, which takes no attack
+damage from the opponent's ex Pokémon, the flip rate of the defense flag (whether a Pokémon has an
+Ability that prevents damage) rose from **2.3% to 9.3%**, and the flip rate of the opponent's Active Spot
+rose from **22% to 32%** ([`crustle_shift.csv`](../results/feature_occlusion/crustle_shift.csv)).
+
 ## RL with the lethal detector
 
 ![Figure 4. RL with the lethal detector reaches the same strength in 31% fewer iterations](../figures/figure4-lethal-aware-rl.png)

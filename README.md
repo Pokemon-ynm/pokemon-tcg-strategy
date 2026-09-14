@@ -40,6 +40,7 @@ training a single large model.
 | §3 — eight policies, 0.83M parameters, 122 / 45 / 54 dimensions | [`manifests/models.csv`](manifests/models.csv) |
 | §3 — switching on the opponent's revealed key cards | [`configs/switch_table.json`](configs/switch_table.json) · [`docs/agent.md`](docs/agent.md) |
 | §3 — lethal search limits (2 s, 12,288 state transitions, depth 18) | [`manifests/environment.md`](manifests/environment.md) |
+| §4 Figure 3 — 587 games, 24,013 positions, flip rate by feature group; the change against Crustle | [`results/feature_occlusion/`](results/feature_occlusion/) · [`figures/figure3-feature-occlusion.png`](figures/figure3-feature-occlusion.png) |
 | §3, §4 — +3.4% training time with the lethal detector | [`results/lethal_aware_rl/sec_per_iteration.csv`](results/lethal_aware_rl/sec_per_iteration.csv) |
 | §4 Figure 4 — RL with and without the lethal detector | [`results/lethal_aware_rl/`](results/lethal_aware_rl/) · [`figures/figure4-lethal-aware-rl.png`](figures/figure4-lethal-aware-rl.png) |
 | §4 — provable-win positions reached more often | [`results/lethal_aware_rl/provable_win_positions.csv`](results/lethal_aware_rl/provable_win_positions.csv) |
@@ -59,7 +60,7 @@ python tools/verify_report_numbers.py
 |---|---|
 | [`docs/deck.md`](docs/deck.md) | The deck, its game plan, the key cards, and the full list |
 | [`docs/agent.md`](docs/agent.md) | Features, imitation learning, league RL, matchup specialists, human feedback, lethal search, and how the agent decides |
-| [`docs/results.md`](docs/results.md) | Ladder results and the evaluations behind Figures 4, 5 and 6 |
+| [`docs/results.md`](docs/results.md) | Ladder results and the evaluations behind Figures 3, 4, 5 and 6 |
 | [`results/README.md`](results/README.md) | What each column in each CSV file means |
 
 ## Repository layout
@@ -68,10 +69,11 @@ python tools/verify_report_numbers.py
 docs/        the deck, the agent, and the results
 figures/     figures from the write-up
 results/
-  ladder/            final result and results by matchup
-  lethal_aware_rl/   RL with and without the rule-based lethal detector (Figure 4)
-  specialists/       generalist and assigned-policy win rates (Figure 5), switching check
-  rabsca/            win rate and Rabsca placement against Dragapult ex (Figure 6)
+  ladder/             final result and results by matchup
+  feature_occlusion/  flip rate by feature group (Figure 3)
+  lethal_aware_rl/    RL with and without the rule-based lethal detector (Figure 4)
+  specialists/        generalist and assigned-policy win rates (Figure 5), switching check
+  rabsca/             win rate and Rabsca placement against Dragapult ex (Figure 6)
 configs/     the 60-card deck and the policy-switching table
 manifests/   the eight policies and the runtime environment
 tools/       verify_report_numbers.py
@@ -81,9 +83,8 @@ tools/       verify_report_numbers.py
 
 This repository holds the evidence for the write-up. It does not include the agent's source code,
 trained weights or training logs, or the competition's simulator library (`cg/`), which we do not
-redistribute. No card images or game assets are
-redistributed; card names and effect text are quoted from the competition simulator's card database
-only to explain the deck.
+redistribute. No card images or game assets are redistributed; card names and effect text are quoted
+from the competition simulator's card database only to explain the deck.
 
 ## License
 
