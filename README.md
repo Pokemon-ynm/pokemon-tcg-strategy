@@ -2,6 +2,8 @@
 
 Supporting material for our Strategy write-up in the **Pokémon TCG AI Battle Challenge (2026)**.
 
+> 日本語: [README.ja.md](README.ja.md)
+
 - Write-up on Kaggle: [Dawn of the Dipplin: Eight Small Policies, One Big Festival](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle-challenge-strategy/writeups/new-writeup-1788440804579)
 - Team **perrodawn** — perrodawn, tora, RB25det, Shinzo Takayama
 - Simulation track: **26th of 6,807 teams**, final score **1123.7**
