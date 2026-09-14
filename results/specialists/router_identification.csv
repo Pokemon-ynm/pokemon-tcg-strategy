@@ -1,0 +1,13 @@
+opponent_deck,expected_slot,expected_policy,games,games_switched_to_expected_slot,switched_at_turn0_by_mulligan,median_switch_turn,incorrect_switches
+Alakazam,d,specialist: Alakazam,8,8,2,1,0
+Dragapult ex,c,specialist: Dragapult ex,8,8,0,1,0
+Archaludon ex,b,specialist: Mega Lopunny ex / Mega Starmie ex / Archaludon ex,8,8,3,1,0
+Mega Starmie ex,b,specialist: Mega Lopunny ex / Mega Starmie ex / Archaludon ex,8,8,0,1,0
+Marnie's Grimmsnarl ex,f,specialist: Marnie's Grimmsnarl ex,8,8,0,1,0
+Hydrapple ex,e,specialist: Hydrapple ex,8,8,2,2,0
+Crustle,g,specialist: Crustle,8,8,1,1,0
+Mega Lucario ex,h,specialist: Mega Lucario ex,8,8,0,1,0
+Mega Lopunny ex,b,specialist: Mega Lopunny ex / Mega Starmie ex / Archaludon ex,8,8,1,2,0
+Team Rocket's Mewtwo ex,a,generalist,8,0,0,,0
+Slowking,a,generalist,8,0,0,,0
+Teal Mask Ogerpon ex,a,generalist,8,0,0,,0

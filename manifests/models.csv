@@ -1,0 +1,9 @@
+slot,role,architecture,d_model,attention_heads,layers,card_token_dim,game_dim,option_dim,parameters,features_version,feature_schema_hash,policy_npz_sha256_head12
+a,generalist,attention policy (autoregressive action head),128,8,2,122,45,54,828481,45,0a89872219a887ee,9681408c81ed
+b,specialist: Mega Lopunny ex / Mega Starmie ex / Archaludon ex,attention policy (autoregressive action head),128,8,2,122,45,54,828481,45,0a89872219a887ee,0422e1afb9df
+c,specialist: Dragapult ex,attention policy (autoregressive action head),128,8,2,122,45,54,828481,45,0a89872219a887ee,04d69a4c4d31
+d,specialist: Alakazam,attention policy (autoregressive action head),128,8,2,122,45,54,828481,45,0a89872219a887ee,e6bc2036c643
+e,specialist: Hydrapple ex,attention policy (autoregressive action head),128,8,2,122,45,54,828481,45,0a89872219a887ee,997d2248e0a7
+f,specialist: Marnie's Grimmsnarl ex,attention policy (autoregressive action head),128,8,2,122,45,54,828481,45,0a89872219a887ee,226b40f4593f
+g,specialist: Crustle,attention policy (autoregressive action head),128,8,2,122,45,54,828481,45,0a89872219a887ee,43875d09f41b
+h,specialist: Mega Lucario ex,attention policy (autoregressive action head),128,8,2,122,45,54,828481,45,0a89872219a887ee,8c59b7d9625f

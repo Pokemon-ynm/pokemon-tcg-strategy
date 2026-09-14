@@ -1,0 +1,224 @@
+{
+  "policy": "public information only: opponent cards revealed on board, in discard, by search, or by the opponent's mulligan (turn 0). Never the opponent name, submission id, hidden hand, deck order, or the simulator's true deck label.",
+  "latch": "one-way. Once a slot is selected it is kept for the rest of the game; the deck tracker and public-card history are shared across slots and never reset on switch.",
+  "fallback": "if a slot's weights fail the feature-contract check at load time, the generalist (slot a) plays that matchup.",
+  "slots": [
+    {
+      "slot": "a",
+      "role": "generalist",
+      "assigned_archetypes": [],
+      "policy_npz_sha256_head12": "9681408c81ed",
+      "features_version": 45,
+      "feature_schema_hash": "0a89872219a887ee"
+    },
+    {
+      "slot": "b",
+      "role": "specialist: Mega Lopunny ex / Mega Starmie ex / Archaludon ex",
+      "assigned_archetypes": [
+        "Archaludon ex",
+        "Mega Starmie ex",
+        "Mega Lopunny ex"
+      ],
+      "policy_npz_sha256_head12": "0422e1afb9df",
+      "features_version": 45,
+      "feature_schema_hash": "0a89872219a887ee"
+    },
+    {
+      "slot": "c",
+      "role": "specialist: Dragapult ex",
+      "assigned_archetypes": [
+        "Dragapult ex"
+      ],
+      "policy_npz_sha256_head12": "04d69a4c4d31",
+      "features_version": 45,
+      "feature_schema_hash": "0a89872219a887ee"
+    },
+    {
+      "slot": "d",
+      "role": "specialist: Alakazam",
+      "assigned_archetypes": [
+        "Alakazam"
+      ],
+      "policy_npz_sha256_head12": "e6bc2036c643",
+      "features_version": 45,
+      "feature_schema_hash": "0a89872219a887ee"
+    },
+    {
+      "slot": "e",
+      "role": "specialist: Hydrapple ex",
+      "assigned_archetypes": [
+        "Hydrapple ex"
+      ],
+      "policy_npz_sha256_head12": "997d2248e0a7",
+      "features_version": 45,
+      "feature_schema_hash": "0a89872219a887ee"
+    },
+    {
+      "slot": "f",
+      "role": "specialist: Marnie's Grimmsnarl ex",
+      "assigned_archetypes": [
+        "Marnie's Grimmsnarl ex"
+      ],
+      "policy_npz_sha256_head12": "226b40f4593f",
+      "features_version": 45,
+      "feature_schema_hash": "0a89872219a887ee"
+    },
+    {
+      "slot": "g",
+      "role": "specialist: Crustle",
+      "assigned_archetypes": [
+        "Crustle"
+      ],
+      "policy_npz_sha256_head12": "43875d09f41b",
+      "features_version": 45,
+      "feature_schema_hash": "0a89872219a887ee"
+    },
+    {
+      "slot": "h",
+      "role": "specialist: Mega Lucario ex",
+      "assigned_archetypes": [
+        "Mega Lucario ex"
+      ],
+      "policy_npz_sha256_head12": "8c59b7d9625f",
+      "features_version": 45,
+      "feature_schema_hash": "0a89872219a887ee"
+    }
+  ],
+  "key_cards": [
+    {
+      "card_id": 92,
+      "card_name": "Applin",
+      "archetype": "Hydrapple ex",
+      "slot": "e"
+    },
+    {
+      "card_id": 117,
+      "card_name": "Cornerstone Mask Ogerpon ex",
+      "archetype": "Crustle",
+      "slot": "g"
+    },
+    {
+      "card_id": 119,
+      "card_name": "Dreepy",
+      "archetype": "Dragapult ex",
+      "slot": "c"
+    },
+    {
+      "card_id": 120,
+      "card_name": "Drakloak",
+      "archetype": "Dragapult ex",
+      "slot": "c"
+    },
+    {
+      "card_id": 121,
+      "card_name": "Dragapult ex",
+      "archetype": "Dragapult ex",
+      "slot": "c"
+    },
+    {
+      "card_id": 150,
+      "card_name": "Hydrapple ex",
+      "archetype": "Hydrapple ex",
+      "slot": "e"
+    },
+    {
+      "card_id": 169,
+      "card_name": "Duraludon",
+      "archetype": "Archaludon ex",
+      "slot": "b"
+    },
+    {
+      "card_id": 190,
+      "card_name": "Archaludon ex",
+      "archetype": "Archaludon ex",
+      "slot": "b"
+    },
+    {
+      "card_id": 344,
+      "card_name": "Dwebble",
+      "archetype": "Crustle",
+      "slot": "g"
+    },
+    {
+      "card_id": 345,
+      "card_name": "Crustle",
+      "archetype": "Crustle",
+      "slot": "g"
+    },
+    {
+      "card_id": 646,
+      "card_name": "Marnie's Impidimp",
+      "archetype": "Marnie's Grimmsnarl ex",
+      "slot": "f"
+    },
+    {
+      "card_id": 647,
+      "card_name": "Marnie's Morgrem",
+      "archetype": "Marnie's Grimmsnarl ex",
+      "slot": "f"
+    },
+    {
+      "card_id": 648,
+      "card_name": "Marnie's Grimmsnarl ex",
+      "archetype": "Marnie's Grimmsnarl ex",
+      "slot": "f"
+    },
+    {
+      "card_id": 677,
+      "card_name": "Riolu",
+      "archetype": "Mega Lucario ex",
+      "slot": "h"
+    },
+    {
+      "card_id": 678,
+      "card_name": "Mega Lucario ex",
+      "archetype": "Mega Lucario ex",
+      "slot": "h"
+    },
+    {
+      "card_id": 741,
+      "card_name": "Abra",
+      "archetype": "Alakazam",
+      "slot": "d"
+    },
+    {
+      "card_id": 742,
+      "card_name": "Kadabra",
+      "archetype": "Alakazam",
+      "slot": "d"
+    },
+    {
+      "card_id": 743,
+      "card_name": "Alakazam",
+      "archetype": "Alakazam",
+      "slot": "d"
+    },
+    {
+      "card_id": 848,
+      "card_name": "Buneary",
+      "archetype": "Mega Lopunny ex",
+      "slot": "b"
+    },
+    {
+      "card_id": 849,
+      "card_name": "Mega Lopunny ex",
+      "archetype": "Mega Lopunny ex",
+      "slot": "b"
+    },
+    {
+      "card_id": 1030,
+      "card_name": "Staryu",
+      "archetype": "Mega Starmie ex",
+      "slot": "b"
+    },
+    {
+      "card_id": 1031,
+      "card_name": "Mega Starmie ex",
+      "archetype": "Mega Starmie ex",
+      "slot": "b"
+    }
+  ],
+  "key_card_count": 22,
+  "archetype_count": 9,
+  "specialist_slot_count": 7
+}

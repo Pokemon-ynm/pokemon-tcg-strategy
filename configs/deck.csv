@@ -1,0 +1,32 @@
+count,card_id,name,kind,hp,evolves_from,has_rule_box,ability,attacks
+4,89,Grookey,Pokémon (Basic),70,,no,,Smash Kick (10) | Branch Poke (30)
+4,93,Dipplin,Pokémon (Stage 1),80,Applin,no,"Festival Lead: If Festival Grounds is in play, this Pokémon may use an attack it has twice. If the first attack Knocks Out your opponent's Active Pokémon, you may attack again after your opponent chooses a new Active Pokémon.",Do the Wave (0) — This attack does 20 damage for each of your Benched Pokémon.
+3,90,Thwackey,Pokémon (Stage 1),100,Grookey,no,"Boom Boom Groove: Once during your turn, if your Active Pokémon has the Festival Lead Ability, you may search your deck for a card and put it into your hand. Then, shuffle your deck.",Beat (50)
+3,149,Applin,Pokémon (Basic),40,,no,,Spray Fluid (20)
+1,42,Applin,Pokémon (Basic),40,,no,,"Find a Friend (0) — Search your deck for a Pokémon, reveal it, and put it into your hand. Then, shuffle your deck. | Rolling Tackle (30)"
+1,73,Rellor,Pokémon (Basic),50,,no,,Slight Intrusion (30) — This Pokémon also does 10 damage to itself.
+1,74,Rabsca,Pokémon (Stage 1),70,Rellor,no,Spherical Shield: Prevent all damage from and effects of attacks from your opponent's Pokémon done to your Benched Pokémon.,Psychic (10) — This attack does 30 more damage for each Energy attached to your opponent's Active Pokémon.
+1,91,Rillaboom,Pokémon (Stage 2),180,Thwackey,no,,"Drum Beating (60) — During your opponent's next turn, attacks used by the Defending Pokémon cost {C} more, and its Retreat Cost is {C} more. | Wood Hammer (180) — This Pokémon also does 50 damage to itself."
+1,100,Goldeen,Pokémon (Basic),50,,no,"Festival Lead: If Festival Grounds is in play, this Pokémon may use an attack it has twice. If the first attack Knocks Out your opponent's Active Pokémon, you may attack again after your opponent chooses a new Active Pokémon.","Whirlpool (10) — Flip a coin. If heads, discard an Energy from your opponent's Active Pokémon."
+1,240,Seaking,Pokémon (Stage 1),110,Goldeen,no,"Festival Lead: If Festival Grounds is in play, this Pokémon may use an attack it has twice. If the first attack Knocks Out your opponent's Active Pokémon, you may attack again after your opponent chooses a new Active Pokémon.",Rapid Draw (60) — Draw 2 cards.
+1,343,Shaymin,Pokémon (Basic),80,,no,"Flower Curtain: Prevent all damage done to your Benched Pokémon that don't have a Rule Box by attacks from your opponent's Pokémon. (Pokémon {ex}, Pokémon {V}, etc. have Rule Boxes.)",Smash Kick (30)
+4,1086,Buddy-Buddy Poffin,Item,,,no,"Buddy-Buddy Poffin: Search your deck for up to 2 Basic Pokémon with 70 HP or less and put them onto your Bench. Then, shuffle your deck.",
+4,1152,Poké Pad,Item,,,no,"Poké Pad: Search your deck for a Pokémon that doesn't have a Rule Box, reveal it, and put it into your hand. Then, shuffle your deck. (Pokémon {ex}, Pokémon {V}, etc. have Rule Boxes.)",
+3,1094,Bug Catching Set,Item,,,no,Bug Catching Set: Look at the top 7 cards of your deck. You may reveal up to 2 in any combination of {G} Pokémon and Basic {G} Energy cards you find there and put them into your hand. Shuffle the other cards back into your deck.,
+2,1097,Night Stretcher,Item,,,no,Night Stretcher: Put a Pokémon or a Basic Energy card from your discard pile into your hand.,
+1,1092,Secret Box,Item,,,no,"Secret Box: You can use this card only if you discard 3 other cards from your hand.
+
+Search your deck for an Item card, a Pokémon Tool card, a Supporter card, and a Stadium card, reveal them, and put them into your hand. Then, shuffle your deck.",
+2,1175,Brave Bangle,Pokémon Tool,,,no,"Brave Bangle: If the Pokémon this card is attached to doesn't have a Rule Box, the attacks it uses do 30 more damage to your opponent's Active Pokémon {ex} (before applying Weakness and Resistance). (Pokémon {ex}, Pokémon {V}, etc. have Rule Boxes.)",
+1,1174,Air Balloon,Pokémon Tool,,,no,Air Balloon: The Retreat Cost of the Pokémon this card is attached to is {C}{C} less.,
+4,1227,Lillie's Determination,Supporter,,,no,"Lillie's Determination: Shuffle your hand into your deck. Then, draw 6 cards. If you have exactly 6 Prize cards remaining, draw 8 cards instead.",
+2,1182,Boss's Orders,Supporter,,,no,Boss's Orders: Switch in 1 of your opponent's Benched Pokémon to the Active Spot.,
+2,1211,Black Belt's Training,Supporter,,,no,"Black Belt's Training: During this turn, attacks used by your Pokémon do 40 more damage to your opponent's Active Pokémon {ex} (before applying Weakness and Resistance).",
+2,1231,Dawn,Supporter,,,no,"Dawn: Search your deck for a Basic Pokémon, a Stage 1 Pokémon, and a Stage 2 Pokémon, reveal them, and put them into your hand. Then, shuffle your deck.",
+1,1184,Lana's Aid,Supporter,,,no,"Lana's Aid: Put up to 3 in any combination of Pokémon that don't have a Rule Box and Basic Energy cards from your discard pile into your hand. (Pokémon {ex}, Pokémon {V}, etc. have Rule Boxes.)",
+1,1191,Kieran,Supporter,,,no,"Kieran: Choose 1:
+
+• Switch your Active Pokémon with 1 of your Benched Pokémon.
+• During this turn, attacks used by your Pokémon do 30 more damage to your opponent's Active Pokémon {ex} and Active Pokémon {V} (before applying Weakness and Resistance).",
+4,1245,Festival Grounds,Stadium,,,no,Festival Grounds: Each Pokémon that has any Energy attached (both yours and your opponent's) recovers from all Special Conditions and can't be affected by any Special Conditions.,
+6,1,Basic Grass Energy,Energy,,,no,,

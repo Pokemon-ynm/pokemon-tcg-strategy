@@ -1,0 +1,2 @@
+control_final_win_rate_pct,with_detector_win_rate_at_200_pct,with_detector_win_rate_at_300_pct,iterations_to_reach_control,fewer_iterations_pct,sec_per_iter_with_detector,sec_per_iter_without_detector,cost_per_iteration_pct,less_wall_clock_pct,seeds_per_arm,method
+53.62,53.51,55.04,207.2,30.9,29.81,28.82,3.4,28.6,3,seed means at iterations 0/100/200/300; linear interpolation between the two checkpoints that bracket the control's iteration-300 win rate; wall clock = iterations x mean seconds per iteration

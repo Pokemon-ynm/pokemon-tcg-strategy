@@ -1,0 +1,5 @@
+arm,seed,iterations,games_per_iter,sec_per_iter_mean
+with_detector,s0,300,512,29.82
+with_detector,s1,300,512,29.8
+without_detector,s0,300,512,28.81
+without_detector,s1,300,512,28.84
